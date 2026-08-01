@@ -66,7 +66,7 @@ Option A: Local Execution
 
 Clone this repository:
 
-git clone https://github.com/YOUR_USERNAME/skillpath-ai.git
+git clone https://github.com/Aditiruhela/skillpath-ai.git
 cd skillpath-ai
 
 
@@ -110,6 +110,6 @@ Distributed under the MIT License. See LICENSE for more information.
 
 Contributions, bug reports, and feature requests are welcome! Feel free to open an issue or submit a Pull Request.
 
-Author: Your Name / GitHub Profile
+Author: Aditi Ruhela / github: github.com/Aditiruhela
 
-Live Demo: SkillPath AI Live
+Live Demo: skillpath-6be00f.netlify.app
