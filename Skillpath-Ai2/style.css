@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #080c14;
+    color: #f1f5f9;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080c14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5;
+}
+
+.glass-card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.accordion-content {
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    overflow: hidden;
+}
+
+@keyframes progressGlow {
+    0% {
+        box-shadow: 0 0 0px rgba(99, 102, 241, 0);
+    }
+    50% {
+        box-shadow: 0 0 16px rgba(99, 102, 241, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 0px rgba(99, 102, 241, 0);
+    }
+}
+
+.progress-glow-pulse {
+    animation: progressGlow 0.8s ease-out;
+    will-change: box-shadow;
+}
+
+.locked-card {
+    filter: grayscale(0.85);
+    opacity: 0.55;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Clean select element reset with fixed option typography */
+select.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23818cf8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.1em;
+    font-size: 0.875rem !important;
+    font-weight: 600;
+}
+
+select.custom-select option {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    padding: 10px 14px !important;
+    line-height: 1.5 !important;
+}
+
+.drag-over {
+    border-color: #f59e0b !important;
+    background-color: rgba(245, 158, 11, 0.08) !important;
+}
